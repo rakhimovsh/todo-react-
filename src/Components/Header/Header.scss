@@ -1,0 +1,11 @@
+.header {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 50px;
+  font-weight: bold;
+  &__to {
+    color: dodgerblue;
+  }
+  &__do {
+    color: red;
+  }
+}
