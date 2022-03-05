@@ -1,0 +1,22 @@
+.item {
+  & + & {
+    margin-top: 10px;
+  }
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: blanchedalmond;
+  border-radius: 5px;
+  justify-content: space-between;
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    &--input {
+      border-radius: 50%;
+    }
+  }
+  &__text {
+    margin: 0;
+    margin-left: 10px;
+  }
+}

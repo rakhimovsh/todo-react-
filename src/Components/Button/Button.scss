@@ -1,0 +1,21 @@
+.button {
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  &.delete {
+    background-color: red;
+    color: white;
+  }
+  &.all {
+    background-color: green;
+    color: white;
+  }
+  &.uncomlited {
+    background-color: yellow;
+    color: black;
+  }
+  &.complited {
+    background-color: cyan;
+    color: black;
+  }
+}
