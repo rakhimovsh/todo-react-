@@ -1,7 +1,8 @@
 import "./Item.scss";
 import Button from "../Button/Button";
+import PropTypes from "prop-types";
 
-function Item({ text = "hechnarsa yozilmagan" }) {
+function Item({ text }) {
   return (
     <li className="item">
       <label className="item__checkbox">
@@ -12,5 +13,11 @@ function Item({ text = "hechnarsa yozilmagan" }) {
     </li>
   );
 }
+Item.propTypes = {
+  text: PropTypes.string,
+};
+Item.defaultProps = {
+  text: "hechnarsa yozilmagan",
+};
 
 export default Item;
