@@ -2,14 +2,29 @@ import "./Item.scss";
 import Button from "../Button/Button";
 import PropTypes from "prop-types";
 
-function Item({ text }) {
+function Item({ children, todo, handleDelete, handleCheck }) {
   return (
-    <li className="item">
+    <li
+      className="item"
+      style={{ textDecoration: todo.isComplited ? "line-through" : "none" }}
+    >
       <label className="item__checkbox">
-        <input className="item__checkbox--input" type="checkbox" />
-        <p className="item__text">{text}</p>
+        <input
+          className="item__checkbox--input"
+          type="checkbox"
+          data-todo-check={todo.id}
+          onClick={handleCheck}
+          defaultChecked={todo.isComplited}
+        />
+        <p className="item__text">{children}</p>
       </label>
-      <Button text="O`chirish" typeBtn="delete" />
+
+      <Button
+        text="O`chirish"
+        typeBtn="delete"
+        data={todo.id}
+        onClick={handleDelete}
+      />
     </li>
   );
 }
