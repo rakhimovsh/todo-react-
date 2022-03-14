@@ -1,4 +1,6 @@
 .header {
+  display: flex;
+  align-items: center;
   font-family: "Courier New", Courier, monospace;
   font-size: 50px;
   font-weight: bold;
@@ -7,5 +9,11 @@
   }
   &__do {
     color: red;
+  }
+  &__theme {
+    padding: 12px;
+    margin-left: 50px;
+    border-radius: 15px;
+    background-color: blanchedalmond;
   }
 }

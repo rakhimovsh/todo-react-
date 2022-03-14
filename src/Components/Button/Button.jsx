@@ -1,12 +1,8 @@
 import "./Button.scss";
 import PropTypes from "prop-types";
-function Button({ text, typeBtn, data, onClick }) {
+function Button({ text, typeBtn, data, onClick, ...otherProps }) {
   return (
-    <button
-      onClick={onClick}
-      data-todo-id={data || data === 0 ? data : ""}
-      className={`button ${typeBtn}`}
-    >
+    <button onClick={onClick} className={`button ${typeBtn}`} {...otherProps}>
       {text}
     </button>
   );

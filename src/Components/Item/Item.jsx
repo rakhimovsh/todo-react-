@@ -22,7 +22,7 @@ function Item({ children, todo, handleDelete, handleCheck }) {
       <Button
         text="O`chirish"
         typeBtn="delete"
-        data={todo.id}
+        data-todo-id={todo.id}
         onClick={handleDelete}
       />
     </li>

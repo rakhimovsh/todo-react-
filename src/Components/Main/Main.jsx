@@ -38,7 +38,7 @@ function Main() {
     window.localStorage.setItem("type", _type);
   };
   return (
-    <section className="hero">
+    <section className="hero container">
       <input
         onKeyUp={(evt) => {
           if (evt.code === "Enter") {
